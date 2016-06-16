@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+
+        /*从0度转到180度*/
+  /*  @keyframes anim{
+        from{
+            transform:rotate(0deg);  //默认以Z轴旋转
+           }
+        to{
+            transform:rotate(180deg);
+           }
+    }
+    img{
+       animation:anim;
+       animation-duration:2s;
+    }*/
+
+
+
+
+  @keyframes animTo0{
+      from{
+          transform:perspective(1000px) rotateY(180deg);//以Y轴旋转（rotateY）
+      }
+      to{
+          transform:perspective(1000px) rotateY(0deg);//不加perspective时旋转过程中图片先缩小后放大
+      }
+  }
+
+  @keyframes animTo180{
+      from{
+          transform:perspective(1000px) rotateY(0deg);
+      }
+      to{
+          transform:perspective(1000px) rotateY(180deg);
+      }
+  }
+
+
+    img{
+       animation:animTo0;
+       animation-duration:2s;/*动画翻转时间*/
+        backface-visibility: hidden;/*翻转隐藏*/
+    }
+  img:hover{
+      animation:animTo180;
+      animation-duration:2s;
+      animation-fill-mode: forwards;//当动画完成后，保持最后一个属性值（在最后一个关键帧中定义）。保持最后的状态
+  }
+    </style>
+
+</head>
+<body>
+
+<img src="img.png">
+</body>
+</html>
