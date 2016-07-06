@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="userscontainer"></div>
+
+<div>
+    <form id="form">
+        <label>
+            名字:
+            <input type="text" required="required" name="name"><!-- required 属性规定必需在提交之前填写输入字段。如果使用该属性，则字段是必填（或必选）的-->
+        </label>
+        <label>
+            年龄:
+            <input type="number" required="required" name="age">
+        </label>
+        <input type="submit" value="保存">
+    </form>
+</div>
+
+<div>
+    <button id="btndeldb">Delete DB</button>
+</div>
+<div id="msg" style="color: red;">
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
