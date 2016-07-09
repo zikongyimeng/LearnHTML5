@@ -1,0 +1,15 @@
+.a {
+  width: 200px;
+  height: 200px;
+  background-color: red; }
+
+a .b {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+display:block}
+
+.c {
+  width: 50px;
+  height: 50px;
+  background-color: yellow; }

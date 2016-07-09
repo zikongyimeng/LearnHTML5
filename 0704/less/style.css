@@ -1,0 +1,10 @@
+.a {
+  width: 200px;
+  height: 200px;
+  background-color: #0a246a;
+}
+.a .b {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
