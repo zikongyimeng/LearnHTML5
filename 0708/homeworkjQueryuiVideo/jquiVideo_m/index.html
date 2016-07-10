@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
+    <script src="jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.11.4.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui-1.11.4.custom/jquery-ui.theme.min.css">
+</head>
+<body>
+<button id="btn" style="margin-left: 200px;margin-top: 100px;width: 100px;height: 50px;background-color: #00f000" >DIALOG</button>
+<div id="dialog">
+    <video src="video2.mp4" width="1000" height="600" autoplay="autoplay" controls="controls"></video>
+</div>
+<script>
+
+    $(function () {
+        $("#dialog").dialog({
+            autoOpen:false,  //自动打开默认是true，这里不让它自动打开
+            show:{
+                effect:"blind",//出现方式
+                duration:1000,
+            },
+            width:800,
+
+            hide:{
+                effect:"size",  //隐藏方式 blind、bounce、clip、drop、explode、fold、highlight、puff、pulsate、scale、shake、size、slide
+                duration:1000
+            }
+        });
+        $("#btn").click(function () {
+            $("#dialog").dialog("open");
+        });
+    })
+
+
+</script>
+
+
+
+</body>
+</html>
