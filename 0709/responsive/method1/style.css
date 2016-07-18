@@ -1,0 +1,23 @@
+body{
+    transition: background-color 2s;//通过2s的时间转换
+}
+
+/*screen是彩色电脑屏幕   设备名  */
+@media screen and (max-width: 500px){    /*电脑屏幕在500px以内*/
+    body{
+        background-color: red;
+    }
+}
+
+/*and前后都要有空格*/
+@media screen and (min-width: 500px) and (max-width: 900px){   /*电脑屏幕在500px到900px之间*/
+    body{
+        background-color: #0a246a;
+    }
+}
+
+@media screen and (min-width: 900px){         /*电脑屏幕在900px以上*/
+    body{
+        background-color: #00f000;
+    }
+}

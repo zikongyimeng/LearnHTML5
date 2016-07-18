@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.css">
+    <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.js"></script>、
+
+</head>
+<body>
+<div data-role="page" id="page1">
+
+    <div data-role="panel" id="settingpanel">   <!--data-role="panel"面板-->
+        这是设置面板
+    </div>
+
+    <!--头部-->
+    <div data-role="header">
+        <h1>第1个页面</h1>
+        <a href="#settingpanel" class="ui-btn-left" data-icon="gear">设置</a>  <!--ui-btn-left按钮在左侧；data-icon="gear"设置图标-->
+
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#">按钮1</a></li>
+                <li><a href="#page2">按钮2  跳转到第二个页面</a></li>
+                <li><a href="#page3">按钮3  跳转到第三个页面</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--中间部分-->
+    <div role="main" class="ui-content">
+        页面内容
+        <a href="#page2">Show Page2</a>
+    </div>
+    <!--底部-->
+    <div data-role="footer">
+        <h4>页面底部</h4>
+    </div>
+</div>
+
+<div data-role="page" id="page2">
+    <div data-role="header">
+        <h1>第2个页面</h1>
+    </div>
+    <div role="main" class="ui-content">
+        页面内容
+
+        <a href="#page1">Show Page1</a>
+    </div>
+    <div data-role="footer">
+        <h4>页面底部</h4>
+    </div>
+</div>
+
+<div data-role="page" id="page3">
+    <div role="main" class="ui-content">
+        <ul data-role="listview">    <!--data-role="listview"写列表-->
+            <li>第一项</li>
+            <li>第二项</li>
+            <li>第三项</li>
+            <li>第四项</li>
+            <li><a href="#page1">跳转到页面1</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

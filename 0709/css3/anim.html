@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        @keyframes anim {
+            from {
+                transform: rotate(0deg);
+                background-color: red;
+            }
+            to {
+                transform: rotate(360deg);
+                background-color: yellow;
+            }
+        }
+
+        #div {
+            animation-name: anim;
+            animation-duration: 5s; /*动画时间*/
+            animation-direction: alternate; /*动画轮流反向播放。*/
+            animation-iteration-count: infinite; /*animation-iteration-count属性定义动画的播放次数；infinite是无限次播放*/
+            animation-timing-function: linear;   /*从开头到结尾以相同的速度来播放动画*/
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div id="div"></div>
+
+</body>
+</html>
