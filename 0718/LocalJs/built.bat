@@ -1,0 +1,2 @@
+tsc --out app.js cn/zhang/hello/Hello.ts cn/zhang/Main.ts  把Hello.ts和Main.ts生成app.js用
+java -jar "C:/Program Files/closure-compiler/closure-compiler-v20160713.jar" --js_output_file app.min.js --js app.js 把app.js生成app.min.js用，执行这个的时候上一句要先注销掉
