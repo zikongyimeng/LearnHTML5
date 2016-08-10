@@ -1,0 +1,77 @@
+
+html, body, div, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.banner {
+    width: 800px;
+    height: 360px;
+    position: relative;
+    margin: 100px auto;
+    perspective: 800px;   /*使具有三维位置变换的元素产生透视效果*/
+    perspective-origin: right;  /*定义视图在轴上的位置*/
+}
+
+.list {
+    width: 800px;
+    height: 360px;
+}
+
+.list li {
+    height: 360px;
+    float: left;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg);
+    transform-origin: center center -180px;
+}
+
+.list li a {
+    width: 100%;
+    height: 360px;
+    position: absolute;
+}
+
+.list li a:nth-child(1) {
+    background: url(images/1.png) no-repeat;
+}
+
+.list li a:nth-child(2) {
+    background: url(images/2.png) no-repeat;
+    top: -360px;
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+}
+
+.list li a:nth-child(3) {
+    background: url(images/3.png) no-repeat;
+    transform: translateZ(-360px) rotateX(-180deg);
+}
+
+.list li a:nth-child(4) {
+    background: url(images/4.png) no-repeat;
+    top: 360px;
+    transform: rotateX(-90deg);
+    transform-origin: top;
+}
+
+
+.ctrl {
+    float: right;
+    margin: 30px 300px;
+}
+
+.ctrl li {
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    float: left;
+    background: yellow;
+    margin-left: 5px;
+    color: black;
+    border-radius: 50%;
+}

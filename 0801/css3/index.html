@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style type="text/css">
+    .color{
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid #0000FF;
+        color: red;
+        overflow: hidden;
+        margin: 0 auto;
+        text-align: center;
+        float: left;
+    }
+    .color img{
+        width: 30px;
+        height: 30px;
+    }
+    .color:hover .colorimg{
+        filter: drop-shadow(60px 0 red);  /*背景变为红色*/
+        -webkit-filter: drop-shadow(60px 0  red);
+        margin-left: -120px;
+    }
+
+</style>
+<body>
+<div id="box">
+    <div class="color">
+        <img class="colorimg" src="垃圾箱.png" />
+    </div>
+    <div class="color">
+        <img src="垃圾箱.png" />
+    </div>
+    <div class="color">
+        <img src="垃圾箱.png" />
+    </div>
+    <div class="color">
+        <img src="垃圾箱.png" />
+    </div>
+</div>
+</body>

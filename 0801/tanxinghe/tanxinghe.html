@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no"/>  <!--移动端加这句-->
+    <title>Title</title>
+</head>
+<style>
+    *{padding: 0;margin: 0;}
+
+    body{
+        width: 100%;
+        height: 700px;
+        background-color: blue;
+        display: -webkit-box;   /*移动端必须加这句*/
+        -webkit-box-orient:vertical ;   /*布局方向为垂直方向*/
+        /*-webkit-box-direction: reverse;   !*排列顺序为反序*!*/
+    }
+    .div1,.div3{
+        height: 80px;
+        width: 100%;
+    }
+    .div2{
+        width: 100%;
+        overflow-y: scroll;
+        -webkit-box-flex: 1;   /*-webkit-box-flex: 定义盒子的弹性空间，给盒子的子元素设置;*/
+    }
+    .div21{
+        width: 100%;
+        height: 150px;
+    }
+</style>
+<body>
+
+<div class="div1" style="background-color: crimson">1</div>
+<div class="div2" style="background-color: chartreuse">
+    <div class="div21" style="background-color: antiquewhite"></div>
+    <div class="div21" style="background-color: darkgoldenrod"></div>
+    <div class="div21" style="background-color: darkgray"></div>
+    <div class="div21" style="background-color: mediumorchid"></div>
+    <div class="div21" style="background-color: turquoise"></div>
+    <div class="div21" style="background-color: chartreuse"></div>
+    <div class="div21" style="background-color: yellow"></div>
+</div>
+<div class="div3" style="background-color: crimson">3</div>
+
+<script type="text/javascript">
+    document.body.style.height=window.innerHeight+"px"; /*把body的高度设为可视页面的高度*/
+//    document.body.style.height=screen.height+"px";   /*把body的高度设为整个页面的高度，pc端不行，移动端可以*/
+</script>
+
+</body>
+</html>
