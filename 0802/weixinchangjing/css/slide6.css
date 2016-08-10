@@ -1,0 +1,65 @@
+
+
+.slide6_runBgDiv{
+    width: 100%;
+    height: 100%;
+}
+.slide6_runBg{
+    width: 100%;
+    height: 100%;
+}
+.slide6_runAvatarDiv{
+    width: 30%;
+    height: 32%;
+    position: absolute;
+    left: 13%;
+    top: 14%;
+}
+.slide6_runAvatar{
+    width: 100%;
+    height: 100%;
+}
+.slide6_runTaDiv{
+    width: 70%;
+    height: 19%;
+    position: absolute;
+    left: 17%;
+    top:53%;
+}
+.slide6_runTa{
+    width: 100%;
+    height: 100%;
+}
+.slide6_runTxtDiv{
+    width: 50%;
+    height: 15%;
+    position: absolute;
+    left: 26%;
+    top:58%;
+}
+.slide6_runTxt{
+    width: 100%;
+    height: 100%;
+}
+.slide6_arrowUpDiv{
+    position: absolute;
+    bottom: 2%;
+    left: 45%;
+    width: 12%;
+    height: 6%;
+    z-index: 70;
+    animation: slide2_arrowUpDiv 1.2s 0s infinite ;
+}
+.slide6_arrowUp{
+    width: 100%;
+    height: 100%;
+}
+@keyframes slide6_arrowUpDiv {
+    from{
+        bottom: 2%;
+    }
+    to{
+        bottom: 4%;
+        opacity: 0;
+    }
+}

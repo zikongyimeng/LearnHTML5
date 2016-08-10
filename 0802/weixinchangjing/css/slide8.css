@@ -1,0 +1,138 @@
+
+@media screen and (max-width: 320px) {
+    html{
+        font-size:10px;
+    }
+}
+@media screen and (min-width:321px)and (max-width: 360px) {
+    html{
+        font-size:12px;
+    }
+}
+@media screen and (min-width:361px)and (max-width: 412px) {
+    html{
+        font-size:15px;
+    }
+}
+@media screen and (min-width:413px)and (max-width: 414px) {
+    html{
+        font-size:16px;
+    }
+}
+@media screen and (min-width:415px)and (max-width: 768px) {
+    html{
+        font-size:25px;
+    }
+}
+
+.slide8_bgDiv{
+    width: 100%;
+    height: 100%;
+    background-color: #b5effd;
+}
+.slide8_redDiv{
+    width: 92%;
+    height: 67%;
+    background-color: #ef3d38;
+    position: absolute;
+    left: 2%;
+    top: 12%;
+    border: 9px solid #fc5955;
+    border-bottom: 30px solid #fc5955;
+    border-radius: 12px;
+    z-index: 20;
+}
+.slide8_redDiv_text{
+    margin-top: 15%;
+    font-size: 1rem;
+    color: #fff;
+    vertical-align: baseline;
+    font-weight: bold;
+    padding-left: 2%;
+    padding-right: 2%;
+    line-height: 135%;
+    text-align: left;
+}
+.slide8_redDiv_p1{
+    text-indent: 2em
+}
+.slide8_introLogoDiv{
+    width: 50%;
+    height: 8%;
+    position: absolute;
+    left: 24%;
+    top: 7%;
+    z-index: 30;
+}
+.slide8_introLogo{
+    width: 100%;
+    height: 100%;
+}
+.slide8_introFlowersDiv{
+    width: 23%;
+    height: 10%;
+    position: absolute;
+    left: 2%;
+    top: 5%;
+    z-index: 10;
+}
+.slide8_introFlowers{
+    width: 100%;
+    height: 100%;
+    animation: slide8_introFlowers 1s 0s infinite alternate;
+}
+@keyframes slide8_introFlowers {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
+.slide8_introAvatarDiv{
+    width: 34%;
+    height: 25%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 40;
+}
+.slide8_introAvatar{
+    width: 100%;
+    height: 100%;
+}
+.slide8_introStarDiv{
+    width: 12%;
+    height: 8%;
+    position: absolute;
+    bottom: 18%;
+    right: 31%;
+    z-index: 50;
+}
+.slide8_introStar{
+    width: 100%;
+    height: 100%;
+    animation: slide8_introStar 0.8s 0s infinite alternate;
+}
+@keyframes  slide8_introStar{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0.9);
+        opacity: 0.5;
+    }
+}
+.slide8_introCloudyDiv{
+    width: 97%;
+    height: 65%;
+    position: absolute;
+    left: 2%;
+    top: 10%;
+    z-index: 45;
+}
+.slide8_introCloudy{
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,151 @@
+
+.slide1{
+    background-color:#3e88f1;
+}
+.slide1_texDiv{
+    width:60% ;
+    height: 22%;
+    position: absolute;
+    top:8%;
+    left:20%;
+    z-index: 50;
+}
+.slide1_tex{
+    width: 100%;
+    height: 100%;
+}
+.slide1_flowers01Div{
+    width:15% ;
+    height: 15%;
+    position: absolute;
+    top:8%;
+    left:11%;
+    z-index: 60;
+}
+.slide1_flowers01{
+    width: 100%;
+    height: 100%;
+}
+.slide1_flowers02Div{
+    width:12% ;
+    height: 11%;
+    position: absolute;
+    top:20%;
+    left:64%;
+    z-index: 60;
+}
+.slide1_flowers02{
+   width: 100%;
+    height: 100%;
+}
+.slide1_flightDiv{
+    position: absolute;
+    width:90% ;
+    height:26%;
+    top:35%;
+    left:5%;
+    z-index: 50;
+}
+.slide1_flight{
+    width: 100%;
+    height: 100%;
+    animation:slide1_flight 2s 0s infinite alternate;  /*选择器的名字、一次动画执行的时间、延迟时间、无限循环、自动反向播放*/
+}
+@keyframes slide1_flight {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.7);
+    }
+}
+.slide1_elementsDiv{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top:9%;
+    z-index: 30;
+}
+.slide1_elements{
+    width: 100%;
+    height: 100%;
+    animation: slide1_cloud 1s 0s infinite alternate;
+}
+@keyframes slide1_elements {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.9);
+    }
+}
+.slide1_cloudDiv{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top:4%;
+}
+.slide1_cloud{
+    width: 100%;
+    height: 100%;
+    animation: slide1_cloud 1s 0s infinite alternate;
+}
+@keyframes slide1_cloud {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.9);
+    }
+}
+.slide1_starsDiv{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top:-1%;
+}
+.slide1_stars{
+    width: 100%;
+    height: 100%;
+    animation: slide1_cloud 1s 0s infinite alternate;
+}
+@keyframes slide1_stars {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.9);
+    }
+}
+.slide1_buildingDiv{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+}
+.slide1_building{
+    width: 100%;
+    height: 100%;
+}
+.slide1_arrowUpDiv{
+    position: absolute;
+    bottom: 2%;
+    left: 45%;
+    width: 12%;
+    height: 6%;
+    z-index: 70;
+    animation: slide1_arrowUpDiv 1.2s 0s infinite ;
+}
+.slide1_arrowUp{
+    width: 100%;
+    height: 100%;
+}
+@keyframes slide1_arrowUpDiv {
+    from{
+        bottom: 2%;
+    }
+    to{
+        bottom: 4%;
+        opacity: 0;
+    }
+}

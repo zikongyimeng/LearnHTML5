@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,user-scalable=no"/>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.2.7.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet"  type="text/css" href="css/cmb.css"/>
+	</head>
+	<body>
+		<audio src="img/music.mp3"></audio>
+		<div class="arrowUp" id="arrow"><img src="img/arrow-up.png" class="arrFade"/></div>
+		<div class="music" id="music"></div>
+	</body>
+	<script type="text/javascript" src="js/swiper-3.2.7.min.js"></script>
+		<script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
+		<script type="text/javascript" >
+			var all = document.getElementsByTagName("*");
+			var oAudio = document.getElementsByTagName("audio")[0];
+			var oMusic = document.getElementById("music");
+			var flag = true;
+			var flag1 = true;
+			var arrow = document.getElementById("arrow");
+			for(var i=0;i<all.length;i++){
+				oAudio.play();
+				all[i].onclick = function(){
+					
+					oAudio.loop = "loop";
+					if(flag1){
+						oAudio.pause();
+						flag1 = false;
+						oMusic.style.background = "url(img/musicBtnOff.png) no-repeat";
+						oMusic.style.backgroundSize = "100%";
+					}else{
+						
+						oAudio.play();
+						flag1 = true;
+						oMusic.style.background = "";
+						
+					}
+				}
+				
+			}
+		</script>
+</html>

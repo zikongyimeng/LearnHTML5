@@ -1,0 +1,73 @@
+
+
+.slide7_Div{
+    width: 100%;
+    height: 100%;
+    background-color: #4add9d;
+}
+.slide7_salaryBgDiv{
+    width: 90%;
+    height: 56%;
+    position: absolute;
+    left: 6%;
+    top: 3%;
+}
+.slide7_salaryBg{
+    width: 100%;
+    height: 100%;
+}
+.slide7_salaryAvatarDiv{
+    width: 50%;
+    height: 37%;
+    position: absolute;
+    left: 22%;
+    top: 5%;
+}
+.slide7_salaryAvatar{
+    width: 100%;
+    height: 100%;
+}
+.slide7_salaryTaDiv{
+    width: 70%;
+    height: 19%;
+    position: absolute;
+    left: 17%;
+    top:53%;
+}
+.slide7_salaryTa{
+    width: 100%;
+    height: 100%;
+}
+.slide7_salaryTxtDiv{
+    width: 53%;
+    height: 13%;
+    position: absolute;
+    left: 24%;
+    top: 61%;
+}
+.slide7_salaryTxt{
+    width: 100%;
+    height: 100%;
+}
+.slide7_arrowUpDiv{
+    position: absolute;
+    bottom: 2%;
+    left: 45%;
+    width: 12%;
+    height: 6%;
+    z-index: 70;
+    animation: slide2_arrowUpDiv 1.2s 0s infinite ;
+}
+.slide7_arrowUp{
+    width: 100%;
+    height: 100%;
+}
+@keyframes slide7_arrowUpDiv {
+    from{
+        bottom: 2%;
+    }
+    to{
+        bottom: 4%;
+        opacity: 0;
+    }
+}

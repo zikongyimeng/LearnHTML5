@@ -1,0 +1,71 @@
+
+.slide2{
+    background-color: #01172c;
+}
+.slide2_bgDiv{
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+}
+.slide2_wasBg{
+    width: 100%;
+    height: 100%;
+}
+.slide2_wasITDiv{
+    width: 52%;
+    height: 8%;
+    position: absolute;
+    top:39%;
+    left:22%;
+    z-index: 20;
+}
+.slide2_wasIT{
+    width: 100%;
+    height: 100%;
+}
+.slide2_wasFarmDiv{
+    width: 52%;
+    height: 8%;
+    position: absolute;
+    top:52%;
+    left:22%;
+    z-index: 20;
+}
+.slide2_wasFarm{
+    width: 100%;
+    height: 100%;
+}
+.slide2_wasStarDiv{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+    top:12%;
+}
+.slide2_wasStar{
+    width: 80%;
+    height: 70%;
+}
+.slide2_arrowUpDiv{
+    position: absolute;
+    bottom: 2%;
+    left: 45%;
+    width: 12%;
+    height: 6%;
+    z-index: 70;
+    animation: slide2_arrowUpDiv 1.2s 0s infinite ;
+}
+.slide2_arrowUp{
+    width: 100%;
+    height: 100%;
+}
+@keyframes slide2_arrowUpDiv {
+    from{
+        bottom: 2%;
+    }
+    to{
+        bottom: 4%;
+        opacity: 0;
+    }
+}

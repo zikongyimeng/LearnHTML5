@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="swiper.min.css"/>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			html,body{
+				height:100%;
+			}
+			.swiper-container1{
+				/*width:300px;*/
+				height:100%;
+				overflow:hidden;
+			}
+			.swiper-container1 .swiper-wrapper{
+				height:100%;
+			}
+			.swiper-wrapper div{
+				/*width:300px;*/
+				height:100%;
+			}
+			.hand{
+				position:fixed;
+				bottom:100px;
+				left:0;
+				width:100%;
+				height:100px;
+				background:rgba(100,100,100,0.5);
+				z-index:999;
+			}
+			input{
+				opacity:0;
+				transition:all 1s linear;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="swiper-container1">
+		  <div class="swiper-wrapper">
+		    <div class="swiper-slide" style="background:red;" id="abc"><a href="http://www.baidu.com" >slider1</a></div>
+		    <div class="swiper-slide" style="background:yellow;">slider2</div>
+		    <div class="swiper-slide" style="background:blue;">slider3</div>
+		    <div class="swiper-slide" style="background:orange;">slider4</div>
+		  </div>
+		 	 <div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+			
+			 <div class="swiper-pagination"></div>
+		</div>
+		<script type="text/javascript" src="jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="swiper-3.3.1.jquery.min.js"></script>
+		<script type="text/javascript">
+			var mySwiper = new Swiper('.swiper-container1', {
+				autoplay: 2000,//可选选项，自动滑动
+				speed:3000,//滑动速度，单位ms
+				loop:true,//设置为true 则开启loop模式。loop模式：会在wrapper前后生成若干个slides让slides看起来是衔接的，用于无限循环切换
+				effect:"fade",//切换效果
+				shadow:false,//开启投影
+				shadowOffset:40,//投影距离
+				preventClicks : true,//默认为true，当swiping时阻止意外的链接点击。
+				preventLinksPropagation : false,//阻止click冒泡。拖动Swiper时阻止click事件。
+				slideToClickedSlide:true,//slide1向slide2 swipe的过程中轻点slide1会回到slide1，false则不接受此效果。
+				longSwipesRatio : 0.5,//longSwipes时触发swiper所需要的最小拖动距离比例，即定义longSwipes距离比例。值越大触发Swiper所需距离越大。最大值0.5
+				threshold : 100,//拖动的临界值（单位为px），如果触摸距离小于该值滑块不会被拖动。
+				touchAngle : 45,//允许触发拖动的角度值。默认45度，即使触摸方向不是完全水平也能拖动slide。
+				touchRatio :2,//触摸距离与slide滑动距离的比率
+				simulateTouch : false,//默认为true，Swiper接受鼠标点击、拖动。
+//				onlyExternal : true,//值为true时，slide无法拖动，只能使用扩展API函数例如slideNext() 或slidePrev()或slideTo()等改变slides滑动。
+				shortSwipes : false,//设置为false时，进行快速短距离的拖动无法触发Swiper。
+//				followFinger : false,//如设置为false，拖动slide时它不会动，当你释放时slide才会切换
+				prevButton:'.swiper-button-prev',//后退按钮的css选择器或HTML元素。
+				nextButton:'.swiper-button-next',//前进按钮的css选择器或HTML元素。
+				noSwiping : true,//设为true时，可以在slide上（或其他元素）增加类名'swiper-no-swiping'，使该slide无法拖动
+//				allowSwipeToPrev : false,//设为false可禁止向左或上滑动。作用类似mySwiper.lockSwipeToPrev()
+//				allowSwipeToNext:false,//设置为false可禁止向右或下滑动。作用类似mySwiper.lockSwipeToNext()
+				pagination : '.swiper-pagination',//分页器容器的css选择器或HTML标签。
+				paginationClickable :true,//此参数设置为true时，点击分页器的指示点分页器会控制Swiper切换
+			})
+//			
+		</script>
+	</body>
+</html>

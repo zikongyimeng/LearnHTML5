@@ -1,0 +1,188 @@
+
+.slide3{
+    width: 100%;
+    height: 100%;
+    background-color: #01172c;
+}
+.slide3_earlyBgDiv{
+    width: 100%;
+    height: 100%;
+}
+.slide3_earlyBg{
+    width: 100%;
+    height: 69%;
+    position: absolute;
+    left:0;
+}
+.slide3_earlyTitleDiv{
+    width: 26%;
+    height: 5%;
+    position: absolute;
+    left:0;
+    top:5%;
+}
+.slide3_earlyTitle{
+    width: 100%;
+    height: 100%;
+}
+.slide3_earlyBuildingDiv{
+    width: 100%;
+    height: 82%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.slide3_earlyBuilding{
+    width: 100%;
+    height: 100%;
+}
+.slide3_lastBusTitleDiv{
+    width: 30%;
+    height: 5%;
+    position: absolute;
+    left:0;
+    top:5%;
+}
+.slide3_lastBusTitle{
+    width: 100%;
+    height: 100%;
+}
+.slide3_lastBusStationDiv{
+    width: 100%;
+    height: 65%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.slide3_lastBusStation{
+    width: 100%;
+    height: 100%;
+}
+.slide3_busDiv{
+    width: 71%;
+    height: 30%;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+}
+.slide3_bus{
+    width: 100%;
+    height: 100%;
+}
+.slide3_lastBusAvatarDiv{
+
+    width: 23%;
+    height: 16%;
+    position: absolute;
+    right: 3%;
+    bottom: 7%;
+}
+.slide3_lastBusAvatar{
+    width: 100%;
+    height: 100%;
+}
+.slide3_myTeamBgDiv{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slide3_myTeamBg{
+    width: 100%;
+    height: 100%;
+}
+.slide3_myTeamWallDiv{
+    width: 28%;
+    height: 57%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.slide3_myTeamAvatarDiv{
+    width: 30%;
+    height: 20%;
+    position: absolute;
+    right: 7%;
+    bottom: 52%;
+}
+.slide3_myTeamAvatar{
+    width: 100%;
+    height: 100%;
+}
+.slide3_myTeamTxtDiv{
+    width:12% ;
+    height: 3%;
+    position: absolute;
+    left: 15%;
+    top:30%;
+}
+.slide3_myTeamTxt{
+    width: 100%;
+    height: 100%;
+}
+.slide3_myTeamTxt01Div{
+    width:20% ;
+    height: 5%;
+    position: absolute;
+    left: 15%;
+    top:34%;
+}
+.slide3_myTeamTxt01{
+    width: 100%;
+    height: 100%;
+}
+.slide3_myTeamTxt02Div{
+    width:20% ;
+    height: 5%;
+    position: absolute;
+    left: 15%;
+    top:40%;
+}
+.slide3_myTeamTxt02{
+    width: 100%;
+    height: 100%;
+}
+.slide3_myTeamTxt03Div{
+    width:20% ;
+    height: 5%;
+    position: absolute;
+    left: 15%;
+    top:46%;
+}
+.slide3_myTeamTxt03{
+    width: 100%;
+    height: 100%;
+}
+.slide3_myteamWhereTxtDiv{
+    width:46%;
+    height: 10%;
+    position: absolute;
+    bottom: 12%;
+}
+.slide3_myteamWhereTxt{
+    width: 100%;
+    height: 100%;
+}
+.slide3_arrowUpDiv{
+    position: absolute;
+    bottom: 2%;
+    left: 45%;
+    width: 12%;
+    height: 6%;
+    z-index: 70;
+    animation: slide2_arrowUpDiv 1.2s 0s infinite ;
+}
+.slide3_arrowUp{
+    width: 100%;
+    height: 100%;
+}
+@keyframes slide3_arrowUpDiv {
+    from{
+        bottom: 2%;
+    }
+    to{
+        bottom: 4%;
+        opacity: 0;
+    }
+}

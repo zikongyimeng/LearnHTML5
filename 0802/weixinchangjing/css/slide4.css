@@ -1,0 +1,128 @@
+
+
+/*点亮前*/
+.slide4_chu{
+    background-color: #302e5c;
+    width: 100%;
+    height: 100%;
+}
+.slide4_lightOffBgDiv{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /*top:10%*/
+}
+.slide4_lightOffBg{
+    width: 100%;
+    height: 100%;
+}
+.slide4_lightOffDiv{
+    width: 38%;
+    height: 85%;
+    position: absolute;
+    left:1%;
+    bottom: 0;
+}
+.slide4_lightOff{
+    width: 100%;
+    height: 100%;
+}
+.slide4_cornerWallDiv{
+    width: 20%;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 20;
+}
+.slide4_cornerWall{
+    width: 100%;
+    height: 100%;
+}
+.slide4_cornerTitleDiv{
+    width: 55%;
+    height: 10%;
+    position: absolute;
+    right: 0;
+    top:5%;
+    z-index: 30;
+}
+.slide4_cornerTitle{
+    width: 100%;
+    height: 100%;
+}
+.slide4_clickGuideDiv{
+    width: 50%;
+    height: 2%;
+    position: absolute;
+    top:28%;
+    left:30%
+}
+.slide4_clickGuide{
+    width: 100%;
+    height: 100%;
+    animation:slide4_clickGuide 2s 0s infinite alternate;
+}
+@keyframes slide4_clickGuide {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/*点亮后*/
+
+.slide4_zhong{
+    background-color: #1a7fdc;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.slide4_lightOnBgDiv{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top:10%
+}
+.slide4_lightOnBg{
+    width: 100%;
+    height: 100%;
+}
+.slide4_lightOnDiv{
+    width: 38%;
+    height: 85%;
+    position: absolute;
+    left:1%;
+    bottom: 0;
+}
+.slide4_lightOn{
+    width: 100%;
+    height: 100%;
+}
+.slide4_lightFlowersDiv{
+    width: 30%;
+    height: 13%;
+    position: absolute;
+    bottom: -4px;
+    right: 5%;
+}
+.slide4_lightFlowers{
+    width: 100%;
+    height: 100%;
+}
+.slide4_weKnowYouDiv{
+    width: 49%;
+    height: 10%;
+    position: absolute;
+    top: 25%;
+    left:32%;
+}
+.slide4_weKnowYou{
+    width: 100%;
+    height: 100%;
+}

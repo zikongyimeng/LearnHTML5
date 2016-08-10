@@ -1,0 +1,76 @@
+
+.slide5_aboutBgDiv{
+    height: 100%;
+    width: 100%;
+}
+.bg5{
+    height: 100%;
+    width: 100%;
+}
+
+.slide5_footCityDiv{
+    width: 100%;
+    height: 31%;
+    position:absolute;
+    width:100%;
+    top:0;
+}
+.slide5_footCity{
+    width: 100%;
+    height: 100%;
+}
+.slide5_footAvatarDiv{
+    width: 60%;
+    height: 33%;
+    position: absolute;
+    left: 34%;
+    top:19%;
+}
+.slide5_footAvatar{
+    width: 100%;
+    height: 100%;
+}
+.slide5_footTaDiv{
+    width: 70%;
+    height: 19%;
+    position: absolute;
+    left: 17%;
+    top:53%;
+}
+.slide5_footTa{
+    width: 100%;
+    height: 100%;
+}
+.slide5_footTxDiv{
+    width: 50%;
+    height: 15%;
+    position: absolute;
+    left: 26%;
+    top:58%;
+}
+.slide5_footTx{
+    width: 100%;
+    height: 100%;
+}
+.slide5_arrowUpDiv{
+    position: absolute;
+    bottom: 2%;
+    left: 45%;
+    width: 12%;
+    height: 6%;
+    z-index: 70;
+    animation: slide2_arrowUpDiv 1.2s 0s infinite ;
+}
+.slide5_arrowUp{
+    width: 100%;
+    height: 100%;
+}
+@keyframes slide5_arrowUpDiv {
+    from{
+        bottom: 2%;
+    }
+    to{
+        bottom: 4%;
+        opacity: 0;
+    }
+}
