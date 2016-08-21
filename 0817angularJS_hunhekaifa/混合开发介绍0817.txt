@@ -1,0 +1,159 @@
+
+因为是移动端所以一定要加这句话：
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+
+1、开发移动应用程序的三种方式：
+  <1>.原生 app（Native App）
+  <2>.web app
+  <3>.混合 app (Hybrid App)
+
+
+
+2、介绍
+  原生app：是基于原操作系统的app；
+    特点：使用原生语言进行开发的app。
+    移动端操作系统：
+      iOS: oc/swift；
+      android: java。
+  web app:与微信公众号类似的嵌套在其他app中的；
+  混合app:使用前端技术以及原生app技术开发的app。
+
+
+
+3、混合开发的三种方式：
+  <1>.单view混合:（目前常见）在同一个页面中既有原生代码又有html前端代码 。
+  <2>.多view混合：（目前常见）某一个页面使用整个html文件或者整个页面使用原生代码。
+  <3>.web主体 ： 有可能成潮流，都是html，只是壳是原生的。
+
+
+4、web主体和web app的区别：
+  web主体 ：是一个独立的应用程序
+  web app ：需要嵌入到其他应用程序，不是独立的应用程序
+
+
+5、三种开发方式的优缺点：
+原生app:
+  开发难度：适中
+  优点：
+    <1>.对手机硬件的访问权限无限制
+    <2>.可以去应用商店去下载（有一个独立的下载地址）
+    <3>.用户体验好 运行速度快切稳定
+  缺点：
+    <1>.只能在原有的平台上去运行；
+       iOS：只能在iOS的操作系统上运行
+       安卓：只能在 安卓手机上运行；
+    <2>.开发成本太高；
+    <3>.不支持跨平台 ；
+
+web app:
+  难度系数：简单
+  优点：
+    没有平台限制（跨平台），只要有浏览器就可以运行
+  缺点：
+    访问手机的硬件服务有限制 
+   （可以使用很多第三方框架去访问手机硬件服务 cordova）。
+
+混合app:
+  难度系数：难
+        （如果大部分功能使用前端开发，
+          只是包一个原生app的壳：适中）
+        （多view混合开发的 ：中上）
+        （单view混合开发的：非常难）
+  优点：
+    <1>.对跨平台支持比较好（因为有好几种方式）
+  ★<2>.热更新：不需要再次提交新版本 就可以去更新app的版本
+    <3>.灵活度高
+  缺点：
+    对手机硬件的访问权限有些限制
+   （可以使用原生代码调用手机硬件的功能，第三方框架）
+
+6、混合开发的方式：
+  <1>.单view混合 --在同一页面 原生语言与JavaScript混编;
+  <2>.多view混合 --原生语言开发的app中夹杂（webView）某个单独的html页面;
+  <3>.web主体 --全部使用web技术开发，使用原生语言给它一个壳，包起来。
+
+7、iOS中oc代码与前端代码之间的关系梳理
+  OC中展示html使用的是UIwebView
+  .h .m的controller文件就相当于html文件
+
+  UIWebView(self.showWebView)就相当于html中的标签元素
+
+  NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"SingleView" ofType:@"html"]]; 相当于前端中的src
+
+  [self.showWebView loadRequest:[NSURLRequest requestWithURL:url]];加载网页
+
+★★★★★
+  [webView stringByEvaluatingJavaScriptFromString:@"document.title"];iOS（OC）调用js的方法
+
+
+
+8、AngularJS(SPAs：Sing Page Applications)单一页面的应用程序
+
+  构建Web应用结构化的框架，可以构建单一页面的应用程序；
+  通过新的属性和表达式扩展HTML，封装标签；
+★数据HTML元素值的双向绑定★★★；
+  可以克隆、赋值HTML元素；
+  隐藏显示HTML元素；
+  在HTML元素背后添加代码；
+  支持输入验证。
+
+
+9、指令：
+  指令是AngularJS封装好的属性，有特殊的意义；
+  常见指令：（前面都可以加data,如data-ng-app）
+    ng-app:声明应用的作用域，作用域是整个标签的范围，入口
+    ng-init:为应用程序定义初始值 
+    ng-bind：绑定HTML元素 常与ng-model配合使用 可以展示绑定的数据
+    ng-model：绑定应用程序数据到HTML元素  
+    ng-controller：为应用程序定义控制器对象 应用程序的逻辑也是写在控制器里面
+
+
+  表达式：
+    作用：将绑定的数据呈现到HTML中
+    用法：{{表达式}}等价于 ng-bind 
+    表达式可以是字符串、数字、数组、对象的表达式
+
+
+10、AngularJS：
+  AngularJS被称为SPAs(Single Page Applications)，所以定义AngularJS的作用域的时候使用ng-app。
+  应用程序（ng-app）就是一个模板（module），它可以包含控制器、过滤器、定义指令等，module就相当于其他语言的main这个入口函数（应用程序在一个页面中默认只能存在1个 并且第一个应用模板是有效的）
+  创建应用程序模板：angular.module('textApp',[])    应用程序的名字要对应好
+  使用模板：<div ng-app=“textApp”></div>这里就是咱们所谓应用程序的入口了
+
+11、创建应用程序模板：
+  // 创建应用程序模板
+  // 第一个参数是应用程序的名字
+  var app = angular.module('app', []);
+
+  // 创建控制器
+  // 一个应用程序可以有多个控制器
+  // 通过应用模板创建控制器
+  // 第一个参数是控制器的名字，第二个参数是回调函数
+  app.controller("mainController", function ($scope,    $rootScope) {
+      //$scope 控制器中的对象，名字必须为$scope
+      //$rootScope 作用域：整个应用程序，全局可以访问的变量
+        $scope.score = 50;
+        $rootScope.names = ['wuduo','zhangsan']
+  });
+  app.controller("otherController",function ($scope) {
+
+  });
+  $scope 作用域：只能在它所在的控制器中访问
+  $rootScope 作用域：整个应用程序，全局可以访问的变量
+
+
+12、模型：
+  ng-model:主要特征具有双向绑定的功能；
+	  与ng-bing 配合使用。
+
+
+13、过滤器：可以过滤数据、可用于转换数据格式
+  lowercase 小写
+  uppercase 大写
+  currency 数字转货币
+  filter 从数组中选一个子集
+  orderBy 数组排序
+
+
+

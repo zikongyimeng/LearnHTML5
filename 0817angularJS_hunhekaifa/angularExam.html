@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <script src="tools/angular.js"></script>
+    <script src="angularExam.js"></script>
+</head>
+<body>
+<!--应用程序的入口-->
+<!--使用控制器变量的时候要引入控制器才能使用，引用地方没限制，只要在应用程序内部引入就行，要看作用域-->
+<div ng-app="app" ng-init="age">
+    <p>{{"前"+"后"}}</p>
+    <p>{{55+2}}</p>
+    <p>{{age>33?1:2}}</p>
+    <!--{{score}}这样也可以执行控制器里的东西-->
+    <p ng-bind="score"></p>  <!--这里执行不到，因为控制器的作用域的原因-->
+    <div ng-controller="mainController">
+        <!--$scope作用域只在本控制器内起作用-->
+        <p ng-bind="score"></p>
+    </div>
+    <div ng-controller="otherController">
+        <p ng-bind="names[0]"></p>   <!--能出结果，因为引用的是$rootScope定义的东西-->
+    </div>
+
+    <!--ng-model经常与ng-bind一起使用，名字要一样，把input里的内容在p里呈现出来-->
+    <input type="text" ng-model="nick">
+    <p ng-bind="nick"></p>
+    {{nick}}  <!--也可以直接这样呈现input里的内容-->
+
+    {{2|currency}} <!-- 添加货币符号-->
+    {{"kkk"|uppercase}}  <!--转成大写-->
+    {{"YYY"|lowercase}}  <!--转成小写-->
+
+    <div ng-init="list=[2,4,5,26,7,8]">
+        <div ng-repeat="num in list">
+            <p ng-bind="num"></p>  <!--输出所有初始值-->
+            <p>aaa</p>  <!--输出6个aaa-->
+        </div>
+        <div ng-repeat="num in list|filter:2">  <!--找数字带2的-->
+            <p ng-bind="num"></p>  <!-- 输出带2的-->
+        </div>
+        {{list|orderBy:number}}  <!--按数字排序-->
+        <div ng-repeat="pp in list|orderBy:number">   <!--按数字排序-->
+            <p ng-bind="pp"></p>
+        </div>
+     </div>
+
+    <div ng-init="arr=['rw','rt','ty','rf']"></div>
+    <div ng-repeat="cha in arr|filter:'r'">   <!--找带r的-->
+        <p ng-bind="cha"></p>   <!--输出带r的-->
+        <p>haha</p>    <!--输出3个haha-->
+    </div>
+
+</div>
+</body>
+</html>
