@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="angular.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+
+    <div ng-app="app">
+        <div ng-controller="mianController">
+            <p ng-bind="name"></p>
+            {{responseData|json}}
+            {{3|currency}}
+            {{responseData["list"]|orderBy:number}}
+
+            <div ng-init="list=[{name:'小明',age:30},{name:'小li',age:35},{name:'小2',age:10},{name:'明2',age:10}]">
+                <div ng-repeat="obj in list |filter:'明'">
+                    <p>{{obj.name}}</p>
+                    <p>{{obj.age}}</p>
+                </div>
+            </div>
+
+            <button ng-click="changeMessage()">改变name的值</button>
+            <p ng-bind="isArray"></p>
+            <input type="text" ng-model="name">
+            <p ng-bind="resultName"></p>
+        </div>
+    </div>
+
+</body>
+</html>

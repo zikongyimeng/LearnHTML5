@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="angular.js"></script>
+</head>
+<body>
+    <div ng-app="app" ng-controller="controller">
+        <input type="checkbox" ng-model="select" ng-change="changeStatus()">
+        <select>
+            <option>111</option>
+            <option ng-selected="select">222</option>
+        </select>
+    </div>
+
+<script>
+    var app = angular.module("app",[]);
+    app.controller("controller",function ($scope) {
+        $scope.select = false;
+       $scope.changeStatus = function () {
+           alert("更改了");
+       } 
+    });
+</script>
+</body>
+</html>
