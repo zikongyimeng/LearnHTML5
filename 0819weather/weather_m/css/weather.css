@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    display: -webkit-box;   /*移动端必须加这句*/
+    -webkit-box-orient:vertical ;   /*布局方向为垂直方向*/
+    background: url("../images/bg2.png");
+}
+#topImgCon{
+    width: 100%;
+    height: 40%;
+    /*background-image: url("../images/weatherbg.png");*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+#inputSch{
+    width: 40%;
+    height: 2rem;
+    margin-left: 16%;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    outline: none;
+    border: 0;
+}
+#btn{
+    width: 25%;
+    height: 2rem;
+    font-size: 1.5rem;
+}
+#cityAllCon{
+    margin-left: 16%;
+}
+#weatherCon{
+    width: 100%;
+    overflow-y: scroll;
+    -webkit-box-flex: 1;
+}
+.kkk{
+    height: 2rem;
+    border: 0.2rem solid #8F8F8F;
+    margin-top: 1rem;
+    border-radius: 12%;
+    color: white;
+    font-weight: bold;
+    width: 78%;
+    line-height: 2rem;
+}
+#topImgConLeft{
+    float: left;
+    position: absolute;
+    top: 1rem;
+    width: 50%;
+}
+.todayCurTemp{
+    position: absolute;
+    top: 3rem;
+    left: 9%;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.todayTtype{
+    position: absolute;
+    top: 7.5rem;
+    left: 9%;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.todayFeng{
+    position: absolute;
+    top: 10rem;
+    left: 9%;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.todayTemp{
+    position: absolute;
+    top: 14.8rem;
+    left: 9%;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+#topImgConRight{
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+    position: absolute;
+    top: 5rem;
+    left: 45%;
+    font-size:2rem;
+}
+.cutCity{
+    font-size:3rem;
+    margin-top: 2rem;
+}
+.futureCon{
+    font-size: 2rem;
+    border-bottom: 0.1rem solid #8F8F8F;
+    overflow: hidden;
+}
+.futureConLeft{
+    float: left;
+    margin-left: 5%;
+}
+.futureConRight{
+    float: right;
+    height: 8rem;
+    width: 30%;
+    margin-top: 1.2rem;
+    margin-right: 4%;
+    text-align: center;
+}
